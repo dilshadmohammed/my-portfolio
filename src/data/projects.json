@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Mental Health Chatbot",
+        "description": "AI-powered chatbot for mental health support and resources.",
+        "image": "/images/mindy.png",
+        "technologies": [
+            "React",
+            "FastAPI",
+            "ChromaDB",
+            "Ollama" 
+        ],
+        "codeLink": "https://github.com/dilshadmohammed/Mindy",
+        "demoLink": ""
+    },
+    {
+        "title": "AI Quiz App",
+        "description": "Interactive multiplayer quiz app that generates questions using AI.",
+        "image": "/images/quiz-ai.png",
+        "technologies": [
+            "React",
+            "Express.js",
+            "socket.io",
+            "Gemini"
+        ],
+        "codeLink": "https://github.com/dilshadmohammed/quiz-ai",
+        "demoLink": "https://quiz-ai-seven-xi.vercel.app/"
+    },
+    {
+        "title": "Food delivery app",
+        "description": "A web application for ordering food online.",
+        "image": "/images/food-delivery.png",
+        "technologies": [
+            "Next.js",
+            "MongoDB"
+        ],
+        "codeLink": "https://github.com/dilshadmohammed/food-web-app/tree/main",
+        "demoLink": "https://food-web-app-nine.vercel.app/"
+    }
+]
