@@ -80,7 +80,7 @@ function Home () {
                     <div className="text-center">
                         <div className="mb-8">
                             <img
-                                src="/profile-pic.jpeg"
+                                src="/profile-pic.webp"
                                 alt="Profile"
                                 className="w-48 h-48 rounded-full mx-auto mb-6 border-4 border-blue-700 shadow-lg"
                             />
