@@ -5,6 +5,7 @@ import Projects from "../components/Projects"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { iconMap } from "../utils/iconMap";
+import { faBars, faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
 
 function Home () {
@@ -42,7 +43,7 @@ function Home () {
                             </div>
                             <details className="md:hidden relative">
                                 <summary className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center cursor-pointer hover:bg-blue-600 transition-colors duration-300">
-                                    <span className="material-symbols-outlined text-white">menu</span>
+                                   <FontAwesomeIcon icon={faBars} />
                                 </summary>
                                 <div className="absolute right-0 top-12 bg-gray-800 rounded-lg shadow-lg border border-gray-700 p-4 min-w-[150px] z-50">
                                     <a
@@ -102,7 +103,6 @@ function Home () {
                             </a>
                             <a
                                 href="/resume"
-                                target="_blank"
                                 rel="noopener noreferrer"
                                 className="border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
                             >
@@ -127,14 +127,14 @@ function Home () {
                                 , always striving to write clean, efficient code.
                             </p>
                         </div>
-                        <div className="relative">
+                        <div className="relative hidden lg:block">
                             <img
                                 src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=400&fit=crop&auto=format"
                                 alt="Coding workspace"
                                 className="rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300"
                             />
                             <div className="absolute -bottom-4 -right-4 bg-blue-500 text-white p-4 rounded-lg shadow-lg">
-                                <span className="material-symbols-outlined text-2xl">emoji_objects</span>
+                                <FontAwesomeIcon icon={faLightbulb} className="text-2xl" />
                             </div>
                         </div>
                     </div>
