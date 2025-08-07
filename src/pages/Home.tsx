@@ -2,6 +2,10 @@ import skills from "../data/skills.json"
 import contact from "../data/contact.json"
 import ContactForm from "../components/ContactForm"
 import Projects from "../components/Projects"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { iconMap } from "../utils/iconMap";
+
 
 function Home () {
 
@@ -97,7 +101,7 @@ function Home () {
                                 Github
                             </a>
                             <a
-                                href="/resume.pdf"
+                                href="/resume"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
@@ -157,7 +161,12 @@ function Home () {
                                     className="bg-gray-700 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center flex flex-col items-center w-32"
                                 >
                                     <div className="text-4xl mb-3">
-                                        <i className={skill.icon}></i>
+                                        <FontAwesomeIcon
+                                            icon={(iconMap as Record<string, { icon: any }>)[skill.name]?.icon}
+                                            className={(iconMap as Record<string, { color?: string; icon: any }>)[skill.name]?.color
+                                                ? (iconMap as Record<string, { color?: string; icon: any }>)[skill.name]?.color
+                                                : "text-blue-400"}
+                                        />
                                     </div>
                                     <h3 className="font-semibold text-white">{skill.name}</h3>
                                 </div>
@@ -232,7 +241,7 @@ function Home () {
                                         className="w-12 h-12 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-300 border border-gray-700"
                                         aria-label="LinkedIn"
                                     >
-                                        <i className="fa-brands fa-linkedin"></i>
+                                        <FontAwesomeIcon icon={faLinkedin} />
                                     </a>
                                     <a
                                         href={contact.github}
@@ -241,7 +250,7 @@ function Home () {
                                         className="w-12 h-12 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-300 border border-gray-700"
                                         aria-label="GitHub"
                                     >
-                                        <i className="fa-brands fa-github"></i>
+                                        <FontAwesomeIcon icon={faGithub} />
                                     </a>
                                     <a
                                         href={contact.x}
@@ -250,7 +259,7 @@ function Home () {
                                         className="w-12 h-12 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-300 border border-gray-700"
                                         aria-label="X"
                                     >
-                                        <i className="fa-brands fa-x-twitter"></i>
+                                        <FontAwesomeIcon icon={faXTwitter} />
                                     </a>
                                 </div>
                             </div>
