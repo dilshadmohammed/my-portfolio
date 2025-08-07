@@ -1,0 +1,14 @@
+{
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/Dilshad_Mohammed_Resume.pdf",
+      "headers": {
+        "Content-Type": "application/pdf"
+      }
+    }
+  ]
+}
