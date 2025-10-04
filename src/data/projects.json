@@ -26,6 +26,20 @@
         "demoLink": "https://quiz-ai-seven-xi.vercel.app/"
     },
     {
+        "title": "CTF Platform",
+        "description": "A web platform for hosting Capture The Flag competitions, featuring isolated challenge environments using Docker.",
+        "image": "/images/ctf-platform.png",
+        "technologies": [
+            "Django",
+            "Jinja2",
+            "MySQL",
+            "Docker",
+            "Redis"
+        ],
+        "codeLink": "https://github.com/dilshadmohammed/ctf-platform",
+        "demoLink": ""
+    },
+    {
         "title": "Food delivery app",
         "description": "A web application for ordering food online.",
         "image": "/images/food-delivery.png",
