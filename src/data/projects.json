@@ -61,5 +61,17 @@
         ],
         "codeLink": "https://github.com/dilshadmohammed/music-using-hand-gestures",
         "demoLink": ""
+    },
+    {
+        "title": "Ecommerce Platform",
+        "description": "A comprehensive ecommerce platform featuring user and admin dashboards, shopping cart functionality, and integrated payment processing.",
+        "image": "/images/ecommerce.png",
+        "technologies": [
+            "Express.js",
+            "MongoDB",
+            "Razorpay"
+        ],
+        "codeLink": "https://github.com/dilshadmohammed/shopping-cart",
+        "demoLink": ""
     }
 ]
