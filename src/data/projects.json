@@ -49,5 +49,17 @@
         ],
         "codeLink": "https://github.com/dilshadmohammed/food-web-app/tree/main",
         "demoLink": "https://food-web-app-nine.vercel.app/"
+    },
+    {
+        "title": "Gesture Tunes",
+        "description": "A web application that uses hand gestures to create music.",
+        "image": "/images/gesture-tunes.png",
+        "technologies": [
+            "OpenCV",
+            "Flask",
+            "mediapipe"
+        ],
+        "codeLink": "https://github.com/dilshadmohammed/music-using-hand-gestures",
+        "demoLink": ""
     }
 ]
